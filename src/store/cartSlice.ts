@@ -67,8 +67,6 @@ const cardsSlice = createSlice({
     builder.addCase(fetchCards.fulfilled, (state, action) => {
       state.data = action.payload;
       state.totalPages = action.payload.pages;
-      console.log(state.data);
-      console.log(state.data?.items[0].employer.name);
     });
   },
 });
