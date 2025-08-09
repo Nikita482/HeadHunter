@@ -4,6 +4,7 @@ import { Collapse } from "@mantine/core";
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "../../store/store";
 import { setCityList } from "../../store/cartSlice";
+import cityIcons from "../../../public/cityIcons.png";
 
 const City = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const City = () => {
   return (
     <section className={styles.city}>
       <div className={styles.city__box}>
-        <img src="public/cityIcons.png" alt="cityIcons" />
+        <img src={cityIcons} alt="cityIcons" />
 
         <button
           className={styles.city__mainBtn}

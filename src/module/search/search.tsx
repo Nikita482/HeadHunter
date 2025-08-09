@@ -4,6 +4,7 @@ import { setSearchText } from "../../store/cartSlice";
 import type { RootState } from "../../store/store";
 import { useState } from "react";
 import { Button } from "@mantine/core";
+import vector from "../../../public/Vector.png";
 
 const Search = () => {
   const dispatch = useDispatch();
@@ -18,11 +19,7 @@ const Search = () => {
       </div>
 
       <div className={styles.wrapper__boxSearch}>
-        <img
-          className={styles.wrapper__icon}
-          src="public/Vector.png"
-          alt="Vector"
-        />
+        <img className={styles.wrapper__icon} src={vector} alt="Vector" />
 
         <input
           type="text"

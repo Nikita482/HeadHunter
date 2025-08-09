@@ -1,10 +1,12 @@
 import styles from "./Header.module.css";
+import logo from "../../../public/logo.png";
+import user from "../../../public/user-circle.png";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__logo}>
-        <img src="public/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
         <h1 className={styles.title}>.FrontEnd</h1>
       </div>
 
@@ -16,7 +18,7 @@ const Header = () => {
         <div className={styles.header__dot}></div>
 
         <button className={styles.header__btn}>
-          <img src="public/user-circle.png" alt="user-circle" />
+          <img src={user} alt="user-circle" />
           Обо мне
         </button>
       </div>
